@@ -9,7 +9,7 @@ monthly data allowances prematurely.
 As you know, reaching these limits will trigger barbaric speed-limitation
 penalties for the rest of the billing period (64 Kbps as of July 2011).
 
-![Screenshot of Optus speed-limitation warning](raw/img/screenshot-optus-speed-limitation.png)
+![Screenshot of Optus speed-limitation warning](optus-broadband-usage/raw/img/screenshot-optus-speed-limitation.png)
 
 The tool automatically logs into your account, downloads current usage data,
 and regulary notifies you of your current usage or just when your usage pace
@@ -21,7 +21,7 @@ The tool automatically downloads the [Usage Meter](https://memberservices.optusz
 page (sample screenshot shown below) for you and extracts the relevant
 information:
 
-![Screenshot of sample of Optus Usage Meter web page](raw/img/screenshot-optus-usage-sample.png)
+![Screenshot of sample of Optus Usage Meter web page](optus-broadband-usage/raw/img/screenshot-optus-usage-sample.png)
 
 
 MIT License
