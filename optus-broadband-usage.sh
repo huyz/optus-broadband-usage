@@ -312,36 +312,36 @@ peak_excess=$(echo "scale=0; $peak_norm * $PACE_EXCESS_THRESHOLD / 100" | bc)
 offpeak_norm=$(echo "scale=0; $offpeak_allow * ($days_usage + 1) / 31" | bc)
 offpeak_excess=$(echo "scale=0; $offpeak_norm * $PACE_EXCESS_THRESHOLD / 100" | bc)
 if [ $peak_usage -gt $peak_excess ]; then
+  pace_peak=excess
   out_standard="$out_standard
 
 WARNING: Your peak-time usage is much greater than it should be!
 Peak-time usage by end of the day should have been: $peak_norm MB
 ($peak_excess MB is already $PACE_EXCESS_THRESHOLD% of normal pace)
 "
-pace_peak=excess
 elif [ $peak_usage -gt $peak_norm ]; then
+  pace_peak=high
   out_standard="$out_standard
 
 WARNING: Your peak-time usage is greater than it should be!
 Peak-time usage by end of the day should have been: $peak_norm MB
 "
-pace_peak=high
 fi
 if [ $offpeak_usage -gt $offpeak_excess ]; then
+  pace_offpeak=excess
   out_standard="$out_standard
 
 WARNING: Your off-peak usage is much greater than it should be!
 Off-peak usage by end of the day should have been: $offpeak_norm MB
 ($offpeak_excess MB is already $PACE_EXCESS_THRESHOLD% of normal pace)
 "
-pace_offpeak=excess
 elif [ $offpeak_usage -gt $offpeak_norm ]; then
+  pace_offpeak=high
   out_standard="$out_standard
 
 WARNING: Your off-peak usage is greater than it should be!
 Off-peak usage by end of the day should have been: $offpeak_norm MB
 "
-pace_offpeak=high
 fi
 
 ##############################################################################
