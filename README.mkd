@@ -4,14 +4,25 @@ Optus Broadband Usage Notifier
 Overview
 --------
 This tool, initially created by [huyz](https://github.com/huyz), is designed
-to help subscribers of Optus Broadband internet avoid reaching your plan's
+to help subscribers of Optus Broadband internet avoid reaching their plan's
 monthly data allowances prematurely.
 As you know, reaching these limits will trigger barbaric speed-limitation
-penalties for the rest of the billing period.
+penalties for the rest of the billing period (64 Kbps as of July 2011).
 
-The tool automatically logs in to your account and download current usage data
-and regulary notify you of your can monitor your current usage (or just be
-notified when your usage pace is too high) all in an effort
+![Screenshot of Optus speed-limitation warning](img/screenshot-optus-speed-limitation.png)
+
+The tool automatically logs into your account, downloads current usage data,
+and regulary notifies you of your current usage or just when your usage pace
+is in the danger zone.
+
+Usage Web Page
+--------------
+The tool automatically downloads the [Usage Meter](https://memberservices.optuszoo.com.au/myusage/)
+page (sample screenshot shown below) for you and extracts the relevant
+information:
+
+![Screenshot of sample of Optus Usage Meter web page](img/screenshot-optus-usage-sample.png)
+
 
 MIT License
 -----------
