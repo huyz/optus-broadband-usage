@@ -249,7 +249,6 @@ curl \
     --cookie "$COOKIES_PATH.txt" \
     --cookie-jar "$COOKIES_PATH.txt" \
     --dump-header "$HEADER_PATH-2.txt" \
-    --include \
     --referer 'https://idp.optusnet.com.au/idp/optus/Authn/Service?spEntityID=https%3A%2F%2Fwww.optuszoo.com.au%2Fshibboleth&j_principal_type=ISP' \
     --data "spEntityID=https://www.optuszoo.com.au/shibboleth&j_principal_type=ISP&j_username=$OPTUS_USERNAME&j_password=$OPTUS_PASSWORD&j_security_check=true" \
     'https://idp.optusnet.com.au/idp/optus/Authn/Service' >$USAGE_PATH-2.html 2>&1 && sleep 1 &&
