@@ -7,20 +7,24 @@
 #   danger zone).
 #
 # Platforms:        OS X, GNU/Linux (not yet tested), Cygwin (not yet tested)
-# Depends:          cron (for regular checks), sendmail (if option selected),
+# Depends:          curl, cron (for regular checks), sendmail (if option selected),
 #                   growlnotify (OS X & if option selected)
 # Source:           https://github.com/huyz/optus-broadband-usage
 # Author:           Huy Z, http://huyz.us/
 # Created on:       2011-01-29
 #
 # Installation:
-# 0. If on OS X and you will be using Growl, install growlnotify.
-#    If you have Homebrew, you can run: brew install growlnotify
-# 1. Edit this script and configure your Optus username and password
-#    (they're the same as your Optusnet email username and password)
-# 2. I recommend running from your crontab; e.g.
-#    # Check every 4 hours
-#    10 0,4,8,12,16,20 * * * exec $HOME/git/optus-broadband-usage/optus-broadband-usage.sh -g -p highany
+# - If necessary:
+#   1. If on OS X and you will be using Growl, install growlnotify.
+#      If you have Homebrew, you can run: brew install growlnotify
+#   2. Install curl from http://curl.haxx.se/
+# - Required:
+#   3. Edit this script and configure your Optus username and password
+#     (they're the same as your Optusnet email username and password)
+# - Recommended:
+#   4. I recommend running from your crontab; e.g.
+#      # Check every 4 hours
+#      10 0,4,8,12,16,20 * * * exec $HOME/git/optus-broadband-usage/optus-broadband-usage.sh -g -p highany
 #
 # Usage:
 #   optus-broadband-usage [-p pace] [-g] [-e recipient] [-f output_format]
