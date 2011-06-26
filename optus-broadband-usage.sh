@@ -22,9 +22,9 @@
 #   3. Edit this script and configure your Optus username and password
 #     (they're the same as your Optusnet email username and password)
 # - Recommended:
-#   4. I recommend running from your crontab; e.g.
+#   4. Add something like this to your crontab:
 #      # Check every 4 hours
-#      10 0,4,8,12,16,20 * * * exec $HOME/git/optus-broadband-usage/optus-broadband-usage.sh -g -p highany
+#      50 2,6,10,14,18,22 * * * exec $HOME/git/optus-broadband-usage/optus-broadband-usage.sh -g -p highany
 #
 # Usage:
 #   optus-broadband-usage [-p pace] [-g] [-e recipient] [-f output_format]
