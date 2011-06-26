@@ -19,10 +19,16 @@ in the danger zone).
 Optus's Usage Meter web page
 ----------------------------
 The tool automatically downloads the [Usage Meter](https://memberservices.optuszoo.com.au/myusage/)
-page (sample screenshot shown below) for you and extracts the relevant
-information.  Note that I already got burnt when I was on a 75 MB plan, before
-I wrote this tool; that's why this screenshot shows that I'm now on a 250 MB
-plan.
+page (sample screenshot shown below) from Optus for you and extracts the
+relevant information.  This offers a number of advantages over network traffic
+monitoring utilities that run on your computer: this tool (a) barely uses any
+CPU or memory and only occasionally, (b) gives you accurate totals no matter how
+many devices use your internet connection, and (c) shows you exactly -- not an
+approximation of -- what your ISP believes you're using.
+
+Note that I got burnt when I was on a 75 MB peak plan, before I wrote this
+tool.  Now that I'm on on 250 MB peak plan, I don't think I'll come close to
+hitting the caps.
 
 ![Screenshot of sample of Optus Usage Meter web page](optus-broadband-usage/raw/master/img/screenshot-optus-usage-sample.png)
 
