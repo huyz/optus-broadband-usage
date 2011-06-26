@@ -20,7 +20,9 @@ Optus's Usage Meter web page
 ----------------------------
 The tool automatically downloads the [Usage Meter](https://memberservices.optuszoo.com.au/myusage/)
 page (sample screenshot shown below) for you and extracts the relevant
-information.
+information.  Note that I already got burnt when I was on a 75 MB plan, before
+I wrote this tool; that's why this screenshot shows that I'm now on a 250 MB
+plan.
 
 ![Screenshot of sample of Optus Usage Meter web page](optus-broadband-usage/raw/master/img/screenshot-optus-usage-sample.png)
 
