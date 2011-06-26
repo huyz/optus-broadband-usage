@@ -63,7 +63,7 @@
 ##############################################################################
 ### Configuration
 
-# Your Optus login name (Optusnet email address),
+# Your Optus login name (Optusnet email address, but without @optusnet.com.au),
 # as you'd enter it at http://www.optuszoo.com.au/
 OPTUS_USERNAME=
 # Your Optus password (Optusnet email password)
