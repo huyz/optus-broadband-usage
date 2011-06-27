@@ -26,8 +26,8 @@ CPU or memory and only occasionally, (b) gives you accurate totals no matter how
 many devices use your internet connection, and (c) shows you exactly -- not an
 approximation of -- what your ISP believes you're using.
 
-Note that I got burnt when I was on a 75 MB peak plan, before I wrote this
-tool.  Now that I'm on on 250 MB peak plan, I don't think I'll come close to
+Admittedly, this tool was more useful to me when I was on a 75 GB peak plan.
+Now that I'm on on 250 GB peak plan, it'll take some change in patterns before
 hitting the caps.
 
 ![Screenshot of sample of Optus Usage Meter web page](optus-broadband-usage/raw/master/img/screenshot-optus-usage-sample.png)
